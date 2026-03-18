@@ -1,0 +1,19 @@
+PASOS PARA SUBIR A GITHUB Y VERCEL
+===================================
+
+OPCIÓN 1 - Script (recomendado, evita errores de upload):
+  1. Doble clic en SUBIR_A_GITHUB.command
+  2. Crea un repo vacío en github.com/new
+  3. Pega la URL cuando el script la pida
+
+OPCIÓN 2 - Upload manual:
+  - GitHub limita 100 archivos. Esta carpeta tiene 66.
+  - Add file → Upload files → arrastra el CONTENIDO de esta carpeta
+  - (No arrastres la carpeta entera, abre y arrastra package.json, src, prisma, etc.)
+
+DESPUÉS EN VERCEL:
+  - vercel.com → Import Project → selecciona el repo
+  - Settings → Environment Variables:
+    DATABASE_URL (PostgreSQL)
+    NEXTAUTH_SECRET (openssl rand -base64 32)
+    NEXTAUTH_URL (https://tu-app.vercel.app)
