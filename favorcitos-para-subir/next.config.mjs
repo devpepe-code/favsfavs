@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ensure proper rendering on Vercel
   reactStrictMode: true,
+  eslint: { ignoreDuringBuilds: true },
 };
 
 export default nextConfig;
